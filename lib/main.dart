@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mazingirasmart/screens/signin.dart';
+import 'package:mazingirasmart/screens/signup.dart';
 
 import 'customwidgets/custombutton.dart';
 
@@ -7,16 +9,20 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-   const MyApp({super.key});
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
-        scaffoldBackgroundColor: const Color(0xFFEFFCED), // Replace with your desired hexadecimal color value
-      ),
-      home: const HomePage(),
-    );
+        theme: ThemeData(
+          scaffoldBackgroundColor: const Color(
+              0xFFEFFCED), // Replace with your desired hexadecimal color value
+        ),
+        home: const HomePage(),
+        routes: {
+          '/Signin': (context) => const SignIn(),
+          '/Signup': (context) => const SignUp(),
+        });
   }
 }
 
@@ -29,43 +35,55 @@ class HomePage extends StatelessWidget {
       body: SafeArea(
         child: Center(
           child: Container(
-          padding: const EdgeInsets.only(
-            left: 50,
-            right: 50,
-            bottom: 20,
-          ),
-          child: Center(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                const SizedBox(height: 20), 
-                Image.asset(
-                  'assets/images/mazingiralogo.png', 
-                  width: 200, 
-                  height: 200,
-                ),
-                  
-                const SizedBox(height: 120), 
-                const Text('Welcome', 
-                style: TextStyle(color: Color(0xFF006633), 
-                fontSize: 50, fontWeight: FontWeight.bold),
-                ),
-                const SizedBox(height: 150), 
-                const CustomButton(
-                title: 'Sign up',
-                outline: false,
+            padding: const EdgeInsets.only(
+              left: 50,
+              right: 50,
+              bottom: 20,
+            ),
+            child: Center(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  const SizedBox(height: 20),
+                  Image.asset(
+                    'assets/images/mazingiralogo.png',
+                    width: 200,
+                    height: 200,
+                  ),
+                  const SizedBox(height: 120),
+                  const Text(
+                    'Welcome',
+                    style: TextStyle(
+                        color: Color(0xFF006633),
+                        fontSize: 50,
+                        fontWeight: FontWeight.bold),
+                  ),
+                  const SizedBox(height: 150),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.pushNamed(context, '/Signup');
+                    },
+                    child: const CustomButton(
+                      title: 'Sign up',
+                      outline: false,
+                    ),
+                  ),
+                  const SizedBox(height: 40),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.pushNamed(context, '/Signin');
+                    },
+                    child: const CustomButton(
+                      title: 'Sign in',
+                      outline: true,
+                    ),
+                  ),
+                ],
               ),
-              const SizedBox(height: 40), 
-                const CustomButton(
-                title: 'Sign up',
-                outline: true,
-              ),
-              ],
             ),
           ),
-              ),
         ),
-    ),
+      ),
     );
   }
 }
