@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>403544581150-cu2mfrdbl8q8b166cf96b8rf3ugccj7q.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.403544581150-cu2mfrdbl8q8b166cf96b8rf3ugccj7q</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAae_j4ZEBSGR5synGAkls4xltgqZWF0_c</string>
+	<key>GCM_SENDER_ID</key>
+	<string>403544581150</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.mazingirasmart.RunnerTests</string>
+	<key>PROJECT_ID</key>
+	<string>mazingira-smart</string>
+	<key>STORAGE_BUCKET</key>
+	<string>mazingira-smart.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:403544581150:ios:635a9987b8e27090073a0f</string>
+</dict>
+</plist>

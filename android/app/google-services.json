@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "403544581150",
+    "project_id": "mazingira-smart",
+    "storage_bucket": "mazingira-smart.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:403544581150:android:65c57cfcf86ddec4073a0f",
+        "android_client_info": {
+          "package_name": "com.example.mazingirasmart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "403544581150-ijqjgvf5m01h02h2gtm5agnfmbqtgvoa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWIRGXMNG5fVrs2KKVWknASvo5Y479TlU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "403544581150-ijqjgvf5m01h02h2gtm5agnfmbqtgvoa.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "403544581150-aha9m27mq74v8j5m4v15oq9d1cm273gj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.mazingirasmart"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
