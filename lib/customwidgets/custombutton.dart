@@ -15,14 +15,6 @@ class CustomButton extends StatelessWidget {
         borderRadius: BorderRadius.circular(30),
       ):
       BoxDecoration(
-        // gradient: const LinearGradient(
-        //   colors: [Color(0xFFFF0F30),
-        //     Color(0xFF3366FF), // Replace with your desired hexadecimal color values
-        //   ], // Specify your gradient colors
-        //   begin: Alignment.topLeft, // Define the starting point of the gradient
-        //   end: Alignment.bottomRight, // Define the ending point of the gradient
-        //   // You can also specify other properties like stops and tileMode
-        // ),
         color: const Color(0xFF006633),
         borderRadius: BorderRadius.circular(30),
       ),

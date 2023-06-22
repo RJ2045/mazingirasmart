@@ -3,15 +3,20 @@ import 'package:mazingirasmart/screens/signin.dart';
 import 'package:mazingirasmart/screens/signup.dart';
 import 'customwidgets/custombutton.dart';
 import 'package:firebase_core/firebase_core.dart';
+// ignore: unused_import
 import 'firebase_options.dart';
 
-Future<void> main() async {
-  await Firebase.initializeApp(
-  options: DefaultFirebaseOptions.currentPlatform,
-);
+// Future<void> main() async {
+//   await Firebase.initializeApp(
+//   options: DefaultFirebaseOptions.currentPlatform,
+// );
+//   runApp(const MyApp());
+// }
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(const MyApp());
 }
-
 
 
 class MyApp extends StatelessWidget {
