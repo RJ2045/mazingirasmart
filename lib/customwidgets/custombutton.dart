@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget {
-  const CustomButton({required this.title, this.outline, super.key});
+  const CustomButton({required this.title, this.outline, super.key,});
   final String title;
   final bool? outline;
 

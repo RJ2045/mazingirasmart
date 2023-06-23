@@ -8,30 +8,55 @@ class SignIn extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SamplePage(
+    return SamplePage(
       title: " ",
       child: Column(
         children: [
-          SizedBox(
-              height: 20,
+          const SizedBox(
+            height: 20,
+          ),
+          const Text(
+            'Lets continue making our environments clean.',
+            style: TextStyle(
+                color: Color(0xFF006633),
+                fontSize: 35,
+                fontWeight: FontWeight.bold),
+          ),
+          const Spacer(),
+          const Text("Sign In",
+              style: TextStyle(
+                fontSize: 25,
+                fontWeight: FontWeight.bold,
+                color: Color(0xFF006633),
+              )),
+          const SizedBox(
+            height: 30,
+          ),
+          const CustomTextField(
+            lebeltext: "Email Address",
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+          const CustomTextField(
+            lebeltext: "Password",
+          ),
+          const SizedBox(
+            height: 100,
+          ),
+          GestureDetector(
+            onTap: () {
+              Navigator.pushNamed(context, '/Myhomepage');
+            },
+            child: const CustomButton(
+              title: "Sign In",
             ),
-            Text(
-              'Lets continue making our environments clean.',
-              style: TextStyle(color: Color(0xFF006633), fontSize: 35, fontWeight: FontWeight.bold),
-            ),
-            Spacer(),
-            Text("Sign In", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold, color: Color(0xFF006633),)),
-            SizedBox(height: 30,),
-            CustomTextField(lebeltext: "Email Address",),
-            SizedBox(height: 20,),
-            CustomTextField(lebeltext: "Password",),
-            SizedBox(height: 100,),
-            CustomButton(title: "Sign In"),
-            SizedBox(height: 20,),
-
-
+          ),
+          const SizedBox(
+            height: 20,
+          ),
         ],
       ),
-      );
+    );
   }
 }

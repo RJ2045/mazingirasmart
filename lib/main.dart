@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mazingirasmart/screens/myhomepage.dart';
 import 'package:mazingirasmart/screens/signin.dart';
 import 'package:mazingirasmart/screens/signup.dart';
 import 'customwidgets/custombutton.dart';
@@ -33,6 +34,8 @@ class MyApp extends StatelessWidget {
         routes: {
           '/Signin': (context) => const SignIn(),
           '/Signup': (context) => const SignUp(),
+           '/Myhomepage': (context) => const MyHomePage(),
+          
         });
   }
 }

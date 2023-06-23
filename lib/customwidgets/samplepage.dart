@@ -18,7 +18,7 @@ class SamplePage extends StatelessWidget {
                 children: [
                   GestureDetector(
                       onTap: () => Navigator.pop(context),
-                      child: const Icon(Icons.arrow_back)),
+                      child: const Icon(Icons.arrow_back_ios_new)),
                   Text(
                     title,
                     style: const TextStyle(fontSize: 20),
