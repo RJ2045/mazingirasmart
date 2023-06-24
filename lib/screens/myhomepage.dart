@@ -10,6 +10,8 @@ class MyHomePage extends StatelessWidget {
       greetingText: 'Hi Joe \nwhat waste do you want to sort today?',
       title: 'Waste collection service',
       titleButtonAction: () {
+        
+                  Navigator.pushNamed(context, '/Wastecollection');
         // Handle button press
       },
       height: 280.0,
@@ -19,7 +21,12 @@ class MyHomePage extends StatelessWidget {
           childAspectRatio: 1.2, // Square ratio for each item
           padding: const EdgeInsets.all(16.0),
           children: [
-            _buildMenuItem(Icons.local_shipping, 'Waste collection'),
+            GestureDetector(
+                onTap: () {
+                  Navigator.pushNamed(context, '/Wastecollection');
+                },
+                child:
+                    _buildMenuItem(Icons.local_shipping, 'Waste collection')),
             _buildMenuItem(Icons.restore_from_trash, 'Locate Recycling centre'),
             _buildMenuItem(Icons.add_a_photo, 'Report an issue'),
             _buildMenuItem(Icons.book, 'Education resources'),
@@ -46,17 +53,18 @@ class MyHomePage extends StatelessWidget {
             color: const Color(0xFF006633),
           ),
           const SizedBox(height: 8.0),
-         Padding(
-          padding: const EdgeInsets.all(8.0), // Add padding to the caption text
-          child: Text(
-            caption,
-            style: const TextStyle(
-              fontSize: 16.0,
-              fontWeight: FontWeight.bold,
+          Padding(
+            padding:
+                const EdgeInsets.all(8.0), // Add padding to the caption text
+            child: Text(
+              caption,
+              style: const TextStyle(
+                fontSize: 16.0,
+                fontWeight: FontWeight.bold,
+              ),
+              textAlign: TextAlign.center, // Center align the caption text
             ),
-            textAlign: TextAlign.center, // Center align the caption text
           ),
-        ),
         ],
       ),
     );

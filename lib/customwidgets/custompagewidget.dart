@@ -65,13 +65,7 @@ class CustomPageWidget extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  if (titleIcon != null) ...[
-                    Icon(
-                      titleIcon,
-                      color: Colors.white,
-                    ),
-                    const SizedBox(width: 8.0),
-                  ],
+                  
                   Flexible(
                     child: Text(
                       title,
@@ -82,7 +76,15 @@ class CustomPageWidget extends StatelessWidget {
                       ),
                     ),
                   ),
-                  
+                  if (titleIcon != null) ...[
+                    Icon(
+                      titleIcon,
+                      color: Colors.white,
+                      size: 60.0,
+                      
+                    ),
+                    const SizedBox(width: 8.0),
+                  ],
                   if (titleButtonAction != null) ...[
                     ElevatedButton(
                       onPressed: titleButtonAction,
@@ -132,9 +134,13 @@ class CustomPageWidget extends StatelessWidget {
       unselectedItemColor: const Color(0xFF006633),
       currentIndex: 0, // Change the index to the desired default index
       onTap: (index) {
+        
+              Navigator.pushNamed(context, '/Myhomepage');
+          
         // Handle navigation to different screens based on the index
         // You can use a navigation package like 'flutter_bloc' or 'provider' for better navigation management
       },
+    
     );
   }
 }

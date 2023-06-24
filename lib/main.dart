@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mazingirasmart/screens/myhomepage.dart';
 import 'package:mazingirasmart/screens/signin.dart';
 import 'package:mazingirasmart/screens/signup.dart';
+import 'package:mazingirasmart/screens/wastecollection.dart';
 import 'customwidgets/custombutton.dart';
 import 'package:firebase_core/firebase_core.dart';
 // ignore: unused_import
@@ -34,7 +35,8 @@ class MyApp extends StatelessWidget {
         routes: {
           '/Signin': (context) => const SignIn(),
           '/Signup': (context) => const SignUp(),
-           '/Myhomepage': (context) => const MyHomePage(),
+          '/Myhomepage': (context) => const MyHomePage(),
+          '/Wastecollection': (context) => const WasteCollection(),
           
         });
   }
