@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mazingirasmart/screens/LocationPage.dart';
 import 'package:mazingirasmart/screens/myhomepage.dart';
 import 'package:mazingirasmart/screens/signin.dart';
 import 'package:mazingirasmart/screens/signup.dart';
@@ -37,6 +38,7 @@ class MyApp extends StatelessWidget {
           '/Signup': (context) => const SignUp(),
           '/Myhomepage': (context) => const MyHomePage(),
           '/Wastecollection': (context) => const WasteCollection(),
+          '/LocationPage': (context) => const LocationPage(),
           
         });
   }
